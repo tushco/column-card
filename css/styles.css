@@ -1,0 +1,98 @@
+body{
+  background: white;
+}
+.card{
+  display:flex;
+  width: 75%;
+  margin:100px auto;
+}
+
+.column{
+  width:33%;
+  padding:60px;
+  color:white;
+  line-height: 2;
+}
+
+.sedan{
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 2%;
+  border-bottom-left-radius: 2%;
+}
+
+.suv{
+  background-color: hsl(184, 100%, 22%);
+}
+
+.lux{
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 2%;
+  border-bottom-right-radius: 2%;
+}
+.button {
+  margin-top: 50px;
+  background-color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20px;
+  transition-duration: 0.4s;
+}
+
+.suvs{
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury{
+  color: hsl(179, 100%, 13%);
+}
+
+.sed{
+  color: hsl(31, 77%, 52%);
+}
+
+.suvs:hover{
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury:hover{
+  background-color: hsl(179, 100%, 13%);
+}
+
+.sed:hover{
+  background-color: hsl(31, 77%, 52%);
+}
+
+.button:hover{
+  color:white;
+  border-color: white;
+  border: solid white;
+}
+
+@media screen and (max-width: 1219px){
+  .card{
+    flex-direction: column;
+    width:80%;
+    margin: 20px auto;
+  }
+  .column{
+    padding:20px;
+    width:100%;
+  }
+  .lux{
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+    border-top-right-radius: 0;
+  }
+  .sedan{
+    border-top-right-radius: 2%;
+    border-bottom-left-radius: 0;
+  }
+  .button{
+    margin-bottom: 50px;
+  }
+
+}
